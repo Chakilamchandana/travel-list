@@ -1,78 +1,51 @@
-<<<<<<< HEAD
+# Travel Packing Checklist
 
-# travel-list
+This project is a React application that helps users create and manage a to-do list for packing items when traveling. Users can select the quantity and item, add it to the packing list, and sort the items based on different criteria. The application also allows users to mark items as packed and see the percentage of items left to pack.
 
-# ~React state management
+## Features
 
-# Getting Started with Create React App
+- **Add Items**: Select the quantity and item, then add it to the packing list.
+- **Sort Items**: Sort the items based on input quantity, item description (name), and packed status.
+- **Mark as Packed**: Mark items as packed, which calculates the remaining items to pack and displays the percentage left.
+- **Completion Status**: When all items are packed, a message indicates that you are all set to travel.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Installation
 
-## Available Scripts
+1. Clone the repository:  
+   git clone https://github.com/Chakilamchandana/travel-list
+2. Navigate to the project directory:  
+   cd travel-packing-checklist
+3. Install dependencies:  
+   npm install
 
-In the project directory, you can run:
+## Usage
 
-### `npm start`
+1. Start the application:
+   ```bash
+   npm start
+   ```
+2. Open your browser and navigate to `http://localhost:3000`.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### App.js
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The main component that manages the state and renders other components.
 
-### `npm test`
+### Form.js
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+A form component that allows users to input item details (quantity and name) and add them to the list.
 
-### `npm run build`
+### Item.js
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+A component that represents each item in the list, with a checkbox to mark it as packed.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### PackingList.js
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+A component that displays the list of items and allows sorting based on different criteria.
 
-### `npm run eject`
+### Stats.js
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+A component that displays the percentage of items left to pack.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Logo.js
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-> > > > > > > 77810a5 (first commit)
+A component that displays the logo of the application
