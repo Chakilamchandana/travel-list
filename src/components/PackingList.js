@@ -1,18 +1,21 @@
 import { useState } from "react";
 import Item from "./Item";
 
+//Handles the item within the body by rendering, and marking the items added.
 function PackingList({ items, onDeleteItems, onToggleItem, onClearList }) {
   const [sortBy, setSortBy] = useState("input");
   let sortedItems;
   if (sortBy === "input") sortedItems = items;
-  if (sortBy === "description")
+  if (sortBy === "description") {
     sortedItems = items
       .slice()
       .sort((a, b) => a.description.localeCompare(b.description));
-  if (sortBy === "packed")
+  }
+  if (sortBy === "packed") {
     sortedItems = items
       .slice()
       .sort((a, b) => Number(a.packed) - Number(b.packed));
+  }
   return (
     <div className="list">
       <ul>

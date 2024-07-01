@@ -11,11 +11,13 @@ export default function App() {
     setItems((items) => [...items, item]);
   }
 
+  //Delete items based on id
   function handleDeleteItems(id) {
     console.log(id);
     setItems((items) => items.filter((item) => item.id !== id));
   }
 
+  //Check and uncheck items based on id
   function handleToggleItems(id) {
     setItems((items) =>
       items.map((item) =>
@@ -28,6 +30,8 @@ export default function App() {
       )
     );
   }
+
+  //set list to empty array
   function handleClearList() {
     setItems([]);
   }

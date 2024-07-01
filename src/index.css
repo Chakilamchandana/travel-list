@@ -20,7 +20,7 @@ html {
 body {
   font-size: 2.4rem;
   font-family: sans-serif;
-  color: #5a3e2b;
+  color: #c9e9dc;
   font-family: "Quicksand";
   font-weight: 500;
 }
@@ -34,8 +34,9 @@ body {
 
 h1 {
   text-align: center;
-  background-color: #f4a226;
+  background-color: #c7dedc;
   font-family: "Monoton";
+  color: #005339;
   font-size: 8rem;
   text-transform: uppercase;
   font-weight: 400;
@@ -45,7 +46,8 @@ h1 {
 }
 
 .add-form {
-  background-color: #e5771f;
+  background-color: #eae7dd;
+  color: #005339;
   padding: 2.8rem 0;
   display: flex;
   align-items: center;
@@ -61,10 +63,10 @@ h3 {
 button,
 select,
 input {
-  background-color: #ffebb3;
-  color: #5a3e2b;
+  background-color: #c7dedc;
+  color: #005339;
   font-family: inherit;
-  border: none;
+  border: 2px solid;
   border-radius: 10rem;
   padding: 1.2rem 3.2rem;
   font-weight: 700;
@@ -74,12 +76,17 @@ input {
 
 .add-form button {
   text-transform: uppercase;
-  background-color: #76c7ad;
+  background-color: #c7dedc;
+  color: #005339;
+}
+
+.add-form button:hover {
+  background-color: #005339;
 }
 
 .list {
-  background-color: #5a3e2b;
-  color: #ffebb3;
+  background-color: #c7dedc;
+  color: #000000;
   padding: 4rem 0;
 
   display: flex;
@@ -96,13 +103,13 @@ input {
   font-size: 1.4rem;
   font-weight: 700;
   margin: 0 0.8rem;
+  background-color: #eae7dd;
 }
 
 .list ul {
   list-style: none;
   width: 80%;
   overflow: scroll;
-
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.2rem;
@@ -132,8 +139,9 @@ input[type="checkbox"] {
 }
 
 .stats {
-  background-color: #76c7ad;
+  background-color: #eae7dd;
   text-align: center;
   font-weight: 700;
   padding: 3.2rem 0;
+  color: #005339;
 }

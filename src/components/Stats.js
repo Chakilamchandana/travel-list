@@ -1,3 +1,4 @@
+//Calculates the % of remaining items to pack based on marked off items.
 function Stats({ items }) {
   if (!items.length) {
     return (
